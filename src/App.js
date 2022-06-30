@@ -34,7 +34,7 @@ function App() {
       canvasRef.current.height = videoHeight;
 
       const obj = await model.detect(video);
-
+      console.log(obj);
       const ctx = canvasRef.current.getContext("2d");
       drawBox(obj,ctx);
       
